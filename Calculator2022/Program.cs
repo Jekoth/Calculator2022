@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace Calculator2022
 {
@@ -41,19 +40,18 @@ namespace Calculator2022
                 Console.WriteLine("Error 404?");
             }
 
-            Thread.Sleep(3000);
-
             Console.WriteLine("Want to do another operations? y/n");
             string O = Console.ReadLine();
             // Restart
             if (O == "y")
             {
-
+                System.Diagnostics.Process.Start(System.AppDomain.CurrentDomain.FriendlyName);
             }
             // Finish
             if (O == "n")
             {
                 Console.WriteLine("Enter a key to close");
+                Console.ReadKey();
             }
         }
 
