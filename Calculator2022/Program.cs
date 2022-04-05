@@ -42,6 +42,19 @@ namespace Calculator2022
             }
 
             Thread.Sleep(3000);
+
+            Console.WriteLine("Want to do another operations? y/n");
+            string O = Console.ReadLine();
+            // Restart
+            if (O == "y")
+            {
+
+            }
+            // Finish
+            if (O == "n")
+            {
+                Console.WriteLine("Enter a key to close");
+            }
         }
 
         public static int Summary(int first, int second)
