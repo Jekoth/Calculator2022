@@ -32,6 +32,10 @@ namespace Calculator2022
             {
                 Console.WriteLine("Division: " + (first / second));
             }
+            else if (which == "*")
+            {
+                Console.WriteLine("Times: " + (first * second));
+            }
         }
 
         public static int Summary(int first, int second)
@@ -47,6 +51,11 @@ namespace Calculator2022
         public static int Division(int first, int second)
         {
             return first / second;
+        }
+
+        public static int Times(int first, int second)
+        {
+            return first * second;
         }
     }
 }
