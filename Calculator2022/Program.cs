@@ -36,6 +36,12 @@ namespace Calculator2022
             {
                 Console.WriteLine("Times: " + (first * second));
             }
+            else
+            {
+                Console.WriteLine("Error 404?");
+            }
+
+            Thread.Sleep(3000);
         }
 
         public static int Summary(int first, int second)
