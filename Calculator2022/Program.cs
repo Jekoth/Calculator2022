@@ -11,13 +11,14 @@ namespace Calculator2022
         static void Main(string[] args)
         {
             Console.WriteLine("First number");
-            int first = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Second number");
-            int second = Convert.ToInt32(Console.ReadLine());
+            double first = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Which is printed: +, -, / or * ?");
+            Console.WriteLine("Which symbol: +, -, / or * ?");
             string which = Console.ReadLine();
             Console.WriteLine("\n");
+
+            Console.WriteLine("Second number");
+            double second = Convert.ToDouble(Console.ReadLine());
 
             if (which == "+")
             {
