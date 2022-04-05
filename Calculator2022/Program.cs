@@ -14,6 +14,12 @@ namespace Calculator2022
             int first = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Second number");
             int second = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Which is printed: +, -, * or /?");
+            string which = Console.ReadLine();
+            Console.WriteLine("\n");
+
+
         }
     }
 }
