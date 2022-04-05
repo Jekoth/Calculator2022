@@ -16,17 +16,21 @@ namespace Calculator2022
             Console.WriteLine("Second number");
             int second = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Which is printed: +, -, * or /?");
+            Console.WriteLine("Which is printed: +, -, / or * ?");
             string which = Console.ReadLine();
             Console.WriteLine("\n");
 
             if (which == "+")
             {
-                Console.WriteLine("Sum: " + (first + second));
+                Console.WriteLine("Summary: " + (first + second));
             }
             else if (which == "-")
             {
                 Console.WriteLine("Difference: " + (first - second));
+            }
+            else if (which == "/")
+            {
+                Console.WriteLine("Division: " + (first / second));
             }
         }
 
@@ -38,6 +42,11 @@ namespace Calculator2022
         public static int Difference(int first, int second)
         {
             return first - second;
+        }
+
+        public static int Division(int first, int second)
+        {
+            return first / second;
         }
     }
 }
