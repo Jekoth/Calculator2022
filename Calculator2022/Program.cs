@@ -54,7 +54,7 @@ namespace Calculator2022
             return first - second;
         }
 
-        public static int Division(int first, int second)
+        public static double Division(double first, double second)
         {
             return first / second;
         }
