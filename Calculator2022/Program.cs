@@ -19,7 +19,10 @@ namespace Calculator2022
             string which = Console.ReadLine();
             Console.WriteLine("\n");
 
-
+            if (which == "+")
+            {
+                Console.WriteLine("Sum: " + (first + second));
+            }
         }
     }
 }
